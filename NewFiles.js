@@ -3,7 +3,7 @@
  * @NScriptType UserEventScript
  * @NModuleScope SameAccount
  */
-define(["N/record", "N/log", "N/file", "N/xml"], function (
+ define(["N/record", "N/log", "N/file", "N/xml"], function (
   record,
   log,
   file,
@@ -44,11 +44,17 @@ define(["N/record", "N/log", "N/file", "N/xml"], function (
       });
       //Traigo el contenido xml
       var xmlFileContent = fileObj.getContents();
+      log.debug('Contenido xml bruto',xmlFileContent);
       //Analiza un string sobre este puedo crar nuevos nodos elementos
       var xmlDocument = xml.Parser.fromString({
         text: xmlFileContent,
       });
-      log.debug("Factura xml", xmlDocument);
+
+      var xmlStringContent = xml.Parser.toString({
+        document : xmlDocument
+    });
+      log.debug("Factura xml toString", xmlStringContent);
+      log.debug("Objeto Factura xml", xmlDocument);
       //Ruta donde guardar mi archivo
       fileObj.folder = 3961;
       var fileId = fileObj.save();
