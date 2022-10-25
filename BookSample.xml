@@ -1,4 +1,4 @@
-            <bookstore xmlns:b="http://www.qualifiednamespace.com/book">
+<bookstore xmlns:b="http://www.qualifiednamespace.com/book">
     <b:book category="cooking">
         <b:title lang="en">Everyday Italian</b:title>
         <b:author>Giada De Laurentiis</b:author>
