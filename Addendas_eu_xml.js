@@ -5,10 +5,7 @@
  */
 define(["N/record", "N/xml", "N/file"], function (record, xml, file) {
   function afterSubmit(context) {
-    var nameInvoice = context.newRecord.getText(
-      "custbody_psg_ei_certified_edoc"
-    );
-
+  
     try {
   
     
