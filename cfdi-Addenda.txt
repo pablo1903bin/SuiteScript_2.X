@@ -1,0 +1,12 @@
+
+var add = 
+'<cfdi:Addenda>
+    <oxxo:AddendaOXXO xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.buzonfiscal.com/schema/xsd/oxxo" 
+    noVersAdd="1" claseDoc="1" plaza="15OBQ" tipoProv="01" locType="T" folioPago="FP_10OBR_85524" glnEmisor="7504015753003" glnReceptor="7507003300005" moneda="MXN" 
+    importeTotal="52243.00" tipoValidacion="1" fuenteNota="1">
+        <oxxo:Articulos>
+           <oxxo:Detalle fechaEntrega="" nombreTienda="Obregón" descripcion="TORTILLA DE MAIZ CALIENTE" unidadMedida="" cantidad="929.00" porcIva="0" montoIva="0" ImporteNeto="18580.00"/>
+           <oxxo:Detalle fechaEntrega="" nombreTienda="Obregón" descripcion="TORTILLA DE MAIZ CALIENTE 500 GRS." unidadMedida="" cantidad="3206.00" porcIva="0" montoIva="0" ImporteNeto="33663.00"/>
+        </oxxo:Articulos>
+    </oxxo:AddendaOXXO>
+ </cfdi:Addenda>';

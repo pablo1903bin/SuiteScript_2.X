@@ -1,0 +1,15 @@
+{
+  "name": "suitescriptcurso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Addendas_eu_xml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon Slice.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

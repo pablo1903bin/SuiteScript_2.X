@@ -42,7 +42,7 @@ function afterSubmitIngresaComercioExterior( context ){
 		  if( comercioExterior ){
 				var infocliente        = obtieneInfoCliente( destinatario, receptor, cliente  );  //la funcion obtieneInfoCliente regresa la cadena del complemento para anexarlo al documento
 				var registroTributario = infocliente.regTrib;
-				var nodo_location      = cXml.indexOf( '</fx:RFCReceptor>' );
+				var nodo_location      = cXml.indexOf( '</fx:RFCReceptor>' );//Posision del nodo dentro del arreglo
 				if( nodo_location != -1 ) {
 					var bodytext_add = cXml.slice( 0, nodo_location+'</fx:RFCReceptor>'.length );
 					bodytext_add +=  '<fx:TaxID>'+registroTributario+'</fx:TaxID>' ;
