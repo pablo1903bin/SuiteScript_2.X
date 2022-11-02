@@ -12,14 +12,14 @@ var tamNodoCompleto = nodo_location + tamNodoVentas;
 //console.log(nodo_location);
 
 var copiaCadena = str.slice(0, tamNodoCompleto);//ase una copia desde el 0 asta el tamaño completo del nodo
-console.log('Copia '+copiaCadena);
+console.log('Copia '+copiaCadena);//<Cfdi atributo="ValorAttr"><ventas></ventas>
 
 copiaCadena += nodoCompleto;//Esa copia le concatena la cadena con mi nodo nuevo
 console.log('Nodo anexado '+ copiaCadena);//<Cfdi atributo="ValorAttr"><ventas><fx:Addenda>MXN</fx:Addenda>
 //Esto copia lo k resta de la cadena despues de anexarle mi nodo
 var copia2 = str.slice(tamNodoCompleto); //Traigo todo el nodo con sus valores en cadena
-console.log('Resto de la cadena'+ suma);
+console.log('Resto de la cadena'+ copia2);
 var suma = copiaCadena+copia2;
-console.log('Cadena conpleta '+ suma);
+console.log('Cadena completa '+ suma);
 
 
