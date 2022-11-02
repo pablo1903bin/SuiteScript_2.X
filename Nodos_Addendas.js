@@ -1,18 +1,25 @@
-var str = '<Cfdi atributo="ValorAttr"><ventas></ventas><libro lang="esp">valorEl</libro><color><contenidosi>rojo</contenidosi></color></Cfdi>';
+var str =
+  '<Cfdi atributo="ValorAttr"><ventas></ventas><libro lang="esp">valorEl</libro><color><contenidosi>rojo</contenidosi></color></Cfdi>';
 
-var nodoCompleto = '<fx:Addenda>MXN</fx:Addenda>';
+var nodoCompleto = "<fx:Addenda>MXN</fx:Addenda>";
 
 //Crea una copia de la cadena
 
-var ventas  = "<ventas>";
-var fin = ventas.length;
-var nodo_location = str.indexOf(ventas);//Posision en numero donde inicia
-var infin =nodo_location+fin; 
-console.log(nodo_location);
+var ventas = "<ventas>";
+var tamNodoVentas = ventas.length;
+var nodo_location = str.indexOf(ventas); //Posision en numero donde inicia
+var tamNodoCompleto = nodo_location + tamNodoVentas;
+//console.log(nodo_location);
 
-var bodytext_add = str.slice( 0, infin );
-console.log(bodytext_add);
-bodytext_add += nodoCompleto;
-console.log(bodytext_add);
-bodytext_add += str.slice( infin );//Traigo todo el nodo con sus valores en cadena
-console.log(bodytext_add);
+var copiaCadena = str.slice(0, tamNodoCompleto);//ase una copia desde el 0 asta el tamaño completo del nodo
+console.log('Copia '+copiaCadena);
+
+copiaCadena += nodoCompleto;//Esa copia le concatena la cadena con mi nodo nuevo
+console.log('Nodo anexado '+ copiaCadena);//<Cfdi atributo="ValorAttr"><ventas><fx:Addenda>MXN</fx:Addenda>
+//Esto copia lo k resta de la cadena despues de anexarle mi nodo
+var copia2 = str.slice(tamNodoCompleto); //Traigo todo el nodo con sus valores en cadena
+console.log('Resto de la cadena'+ suma);
+var suma = copiaCadena+copia2;
+console.log('Cadena conpleta '+ suma);
+
+
