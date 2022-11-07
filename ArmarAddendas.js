@@ -40,9 +40,9 @@
       var idRegFact = factura.getValue({
         fieldId: "custbody_psg_ei_certified_edoc"
       })
-      log.debug('Tipo de dato de mi idRegFact',typeof idRegFact);
-      log.debug('Id de registro de mi factura', idRegFact);
-      log.debug('Registo de mi factura ',facturaRegistrada);//******************************************************************Debug
+      //log.debug('Tipo de dato de mi idRegFact',typeof idRegFact);
+     // log.debug('Id de registro de mi factura', idRegFact);//Mi id del registro k estoy cargando ahora
+     // log.debug('Registo de mi factura ',facturaRegistrada);//******************************************************************Debug
 
       //cargar mi registro de factura
       var sXml = facturaRegistrada.getValue({
@@ -110,7 +110,7 @@
           // log.debug("MI nueva cadena reestructurdada", xmlData); //*************************************************************debug
   
           var fileObjCreate = file.create({
-            name: "Addenda++_" + nombreFactura,
+            name: nombreFactura,
             fileType: file.Type.XMLDOC,
             contents: xmlData,
             description: "Este es un documento modificado",
@@ -119,20 +119,16 @@
             isOnline: true,
           });
   
+          
        
           var fileId = fileObjCreate.save();
-       
-          facturaRegistrada.setValue( { fieldId: 'custbody_psg_ei_certified_edoc', value: idRegFact} );
+   
+    
+          facturaRegistrada.setValue( { fieldId: 'custbody_psg_ei_certified_edoc', value: fileId} );
+          
           var recordId =  facturaRegistrada.save( { enableSourcing: true, ignoreMandatoryFields: true } );
-          log.debug("Archivo creado", fileObjCreate); //*****************************************************************debug
-          var idFileCreatdo = fileObjCreate.id;
-          log.debug("ID de archivo creado", fileId); //*****************************************************************debug
+     
         }
-  
-        //Ruta donde guardar mi archivo
-  
-        var stop = 7;
-        var alto = 8;
       } catch (e) {
         log.error({
           title: e.name,
@@ -141,7 +137,7 @@
       }
     }
     return {
-      beforeLoad: beforeLoad,
+      afterSubmit: beforeLoad,
     };
   });
   

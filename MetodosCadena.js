@@ -2,7 +2,6 @@ var nombres = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa'];
 var masculinos = nombres.slice(1, 3);
 
 //console.log(masculinos);
-//////////////////////////////////////////////////////////////////////////////////////////////////
 
 var miHonda = { color: 'red', ruedas: 4, motor: { cilindros: 4, cantidad: 2.2 } };
 var miCoche = [miHonda, 2, 'Buen estado', 'comprado 1997'];
@@ -29,12 +28,15 @@ let nuevaLongitud2 = frutas.unshift('Fresa') // Añade "Fresa" al inicio
 //Eliminar el primer elemento de un Array
 let primero = frutas.shift() // Elimina "Fresa" del inicio
 //Encontrar el índice de un elemento del Array
+//El siguiente ejemplo usa indexof() para localizar valores en un array
 let posBanana = frutas.indexOf('Banana')//Posicion 5
 
 //Eliminar un único elemento mediante su posición
 let elementoEliminado = frutas.splice(posBanana, 1)
 //console.log(frutas);
-frutas.forEach( function (elemento, indice, array) {
+frutas.forEach( function (
+   elemento, indice, array
+){
    // console.log(elemento, indice);
 })
 let nuevaLongitud3 = frutas.unshift('Banana');
@@ -54,7 +56,7 @@ let elementosEliminados = vegetales.splice(pos, numElementos)
 //Copiar un array
 let copiaArray = vegetales.slice();
 // ["Repollo", "Zanahoria"]; ==> Copiado en nuevo "copiaArray"
-console.log(copiaArray);
+//console.log(copiaArray);
 
 //Acceso a elementos de un arreglo
 let arr = ['primer elemento', 'segundo elemento', 'tercer elemento']
@@ -72,6 +74,8 @@ const elements = ['fuego', 'aire', 'agua','tierra'];
 //console.log(elements.join(''));
 console.log(elements.join('-'));
 
+//Encontrar un cadena dentro de otra,
+browserType.indexOf('zilla');
 
 
 

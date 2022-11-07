@@ -1,3 +1,8 @@
+var str =
+  '<Cfdi atributo="ValorAttr"><ventas></ventas><libro lang="esp">valorEl</libro><color><contenidosi>rojo</contenidosi></color></Cfdi>';
+
+var nodoCompleto = "<fx:Addenda>MXN</fx:Addenda>";
+
 const fs = require("fs");
 //var files = fs.readdirSync('./');
 fs.readdir('./', (error,files)=>{
@@ -7,38 +12,32 @@ fs.readdir('./', (error,files)=>{
 var archivo = fs.readFileSync('./FacturaRecord.xml','UTF-8');
 
 var miNodoAMeter = "<fx:Addenda>MXN</fx:Addenda>";
+var NodoBuscado = '</fx:ComprobanteEx>'; 
 
-var NodoBuscado = "<fx:Conceptos>"; 
-
-var NodoBuscadoFin = "</fx:Conceptos>"; 
-
-var tamNodoComprobBuscadofin = NodoBuscadoFin.length;
+var tamNodoComprobBuscado = NodoBuscado.length;
 
 var ubicacionNodo = archivo.indexOf(NodoBuscado); 
-var ubicacionNodoFin = archivo.indexOf(NodoBuscadoFin); 
-var ubiNodoFinal = ubicacionNodoFin+tamNodoComprobBuscadofin;
 
+var totalNodoCompleto = ubicacionNodo +tamNodoComprobBuscado;
 
-var copiaPrimeraParteCadena = archivo.slice(0, ubicacionNodo);//Copiar la primera parte de la cadena
-console.log('Primera parte de la cadena copiada'+ copiaPrimeraParteCadena );
-var restoCadena = archivo.slice(ubiNodoFinal);
-console.log('Segunda parte de la cadena copiada'+ restoCadena );
-var cadenaSumada = copiaPrimeraParteCadena+restoCadena;//le sumo la segunda parte de la cadena
+var copiaPrimeraParteCadena = archivo.slice(0, totalNodoCompleto);
 
-console.log('Cadena completada'+ cadenaSumada);
+var cadenaSumada = copiaPrimeraParteCadena+miNodoAMeter;//le sumo mi nodo a mi primera copia de la cadena
 
+var restoCadena = archivo.slice(totalNodoCompleto);
 
+var cadenaCompletada = cadenaSumada+restoCadena;
+console.log('Cadena completada'+cadenaCompletada);
+var kitar = cadenaCompletada.replace(miNodoAMeter,"");
 
+console.log('Cadena completada'+ kitar);
 });
 
 
 
 
 //Crea una copia de la cadena
-var str =
-  '<Cfdi atributo="ValorAttr"><ventas></ventas><libro lang="esp">valorEl</libro><color><contenidosi>rojo</contenidosi></color></Cfdi>';
 
-var nodoCompleto = "<fx:Addenda>MXN</fx:Addenda>";
 var ventas = "<ventas>";
 var tamNodoVentas = ventas.length;
 var nodo_location = str.indexOf(ventas); //Posision en numero donde inicia
