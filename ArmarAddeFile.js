@@ -2,7 +2,7 @@
  * @NApiVersion 2.0
  * @NScriptType UserEventScript
  */
- define(["N/record", "N/log", "N/file", "N/xml"], function (
+define(["N/record", "N/log", "N/file", "N/xml"], function (
   record,
   log,
   file,
@@ -24,13 +24,14 @@
   function afterSubmit(context) {
     /*                       ESTE ES EL CHIDO                              */
     if (
-      context.type == context.UserEventType.EDIT || context.type == context.UserEventType.XEDIT
-
+      context.type == context.UserEventType.EDIT ||
+      context.type == context.UserEventType.XEDIT
     ) {
-      log.debug('estas Editando o Xeditando un registro');//********************************* DEBUG
+      log.debug("estas Editando o Xeditando un registro"); //********************************* DEBUG
       var factura = context.newRecord; //Traer el obj de registro del obj de contexto
-      
-      var IdDeFacturaReal = factura.getValue( //236591 ejm
+
+      var IdDeFacturaReal = factura.getValue(
+        //236591 ejm
         //Traigo el  nombre de mi factura
         "custbody_psg_ei_certified_edoc"
       );
@@ -38,45 +39,21 @@
       if (!IdDeFacturaReal) {
         return;
       }
-
-      var nombreFactura = factura.getText(
-        //Traigo el  nombre de mi factura
-        "custbody_psg_ei_certified_edoc"
-      );
-      //Cargar el registro de mi  factura, sobre este puedo obtener valores como Obj
+      //Cargar el registro de mi  factura, sobre este puedo obtener valores como Obj, setaear valores
       var facturaRegistrada = record.load({
         type: factura.type,
         id: factura.id,
         isDynamic: true,
       });
-
-      //cargar mi registro de factura
-      var sXml = facturaRegistrada.getValue({
-        fieldId: "custbody_psg_ei_content",
-      }); //Este ya es string-Cadena Contenido de la factura registrada
-
+      var nombreFactura = factura.getText(
+        //Traigo el  nombre de mi factura
+        "custbody_psg_ei_certified_edoc"
+      );
       var archivo = file.load("Certified E-Documents/" + nombreFactura); //Cargo el archivo en memoria
 
-      if (!archivo) {
-        return;
-      }
-      var id = archivo.id;
-      var intId = parseInt(id);
       try {
-        var archivoCopied = file.copy({
-          id: intId,
-          folder: 4039, //FacturasCopiadasAqui-Carpeta
-          conflictResolution: file.NameConflictResolution.RENAME_TO_UNIQUE,
-        });
-
-        var idFileCopy = parseInt(archivoCopied.id); //Covertimos cadena a numero id
-
-        var fileObj = file.load({
-          //Cargar el archivo  nuevamente para trabajarlo y modificarlo el copiado ahora
-          id: idFileCopy,
-        });
-
-        var xmlData = fileObj.getContents(); //Traigo el contenido xml del objeto cargado ya es cadena
+        var xmlData = archivo.getContents(); //Traigo el contenido xml del objeto cargado ya es cadena
+        log.debug("Tipo de dato de mia rchivo cargado xml ", typeof xmlData); //*    *********************************** DEBUG
 
         /*    Normalmente la factura en xml esta metida dentro del nodo Addenda k ya trae por defecto el xml k me genera netSuite hay k borrarla        */
 
@@ -110,6 +87,7 @@
           //Nueva cadena asignada ala original a traves de copias de la misma y reestructurada
           var xmlData = totalCadena; //Reasigno el valor de cadenas k traigo y se lo asigno a xmlData
 
+          /*    Cree un nuevo archivo y cargar este nuevo contenido    */
           var fileObjCreate = file.create({
             //Crear un nuevo archivo xml asignarle mi cadena de contenido, guardarlo
             name: nombreFactura,
@@ -120,19 +98,15 @@
             folder: 4040, //FacturasReestructuradas /Carpeta
             isOnline: true,
           });
-
           var fileId = fileObjCreate.save(); //Guardar el nuevo archivo creado
-          //Setear mi nueva factura creada y reestructurada en el campo de Archivos Certificados
+          /*Setear mi nueva factura,en el campo de Archivos Certificados para aserlo disponible en DOCUMENTO ELECTRONICO CERTIFICADO*/
           facturaRegistrada.setValue({
+            //Apuntar al nuevo archivo creado
             fieldId: "custbody_psg_ei_certified_edoc",
             value: fileId,
           });
-          var nueValor = facturaRegistrada.getValue({
-            fieldId: "custbody_psg_ei_certified_edoc",
-          });
-          log.debug("Nuevo valor seteado", nueValor);//¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨DEBUG
           //guardar mi registro modificado
-          var recordId = facturaRegistrada.save({
+          facturaRegistrada.save({
             enableSourcing: true,
             ignoreMandatoryFields: true,
           });
