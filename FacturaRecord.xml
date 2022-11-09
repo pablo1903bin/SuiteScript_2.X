@@ -1,77 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<fx:FactDocMX
-        xmlns:fx="http://www.fact.com.mx/schema/fx"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.fact.com.mx/schema/fx http://www.mysuitemex.com/fact/schema/fx_2010_g.xsd">
-    <fx:Version>8</fx:Version>
-    <fx:Identificacion>
-        <fx:CdgPaisEmisor>MX</fx:CdgPaisEmisor>
-        <fx:TipoDeComprobante>FACTURA</fx:TipoDeComprobante>
-        <fx:RFCEmisor>JES900109Q90</fx:RFCEmisor>
-        <fx:RazonSocialEmisor>JIMENEZ ESTRADA SALAS A A</fx:RazonSocialEmisor>
-        <fx:Usuario>Rosa Gómez</fx:Usuario>
-        <fx:AsignacionSolicitada>
-                <fx:Serie>NET</fx:Serie>
-                <fx:Folio>508</fx:Folio>
-            <fx:TiempoDeEmision>2022-07-04T12:25:00</fx:TiempoDeEmision>
-        </fx:AsignacionSolicitada>
-        <fx:Exportacion>01</fx:Exportacion>
-        <fx:LugarExpedicion>01030</fx:LugarExpedicion>
-    </fx:Identificacion>
-    <fx:Emisor>
-        <fx:RegimenFiscal>
-            <fx:Regimen>610</fx:Regimen>
-        </fx:RegimenFiscal>
-    </fx:Emisor>
-    <fx:Receptor>
-        <fx:CdgPaisReceptor>MX</fx:CdgPaisReceptor>
-        <fx:RFCReceptor>JES900109Q90</fx:RFCReceptor>
-        <fx:NombreReceptor>JIMENEZ ESTRADA SALAS A A</fx:NombreReceptor>
-        <fx:DomicilioFiscalReceptor>01030</fx:DomicilioFiscalReceptor>
-        <fx:RegimenFiscalReceptor>601</fx:RegimenFiscalReceptor>
-        <fx:UsoCFDI>G01</fx:UsoCFDI>
-    </fx:Receptor>
-    <fx:Conceptos>
-            <fx:Concepto>
-                <fx:Cantidad>1.000000</fx:Cantidad>
-                <fx:ClaveUnidad>E48</fx:ClaveUnidad>
-                    <fx:UnidadDeMedida>7</fx:UnidadDeMedida>
-                <fx:ClaveProdServ>43211900</fx:ClaveProdServ>
-                <fx:Codigo>INV_HP ENVY 32" Media Display Monitor w/ AMD FreeSync</fx:Codigo>
-                <fx:Descripcion>"HP ENVY 32" Media Display Monitor w/ AMD FreeSync"</fx:Descripcion>
-                <fx:ValorUnitario>9310.00</fx:ValorUnitario>
-                <fx:Importe>9310.00</fx:Importe>
-                <fx:Descuento>0.00</fx:Descuento>
-                <fx:ObjetoImp>02</fx:ObjetoImp>
-                    <fx:ImpuestosSAT>
-                            <fx:Traslados>
-                                        <fx:Traslado Base="9310.00" Importe="1489.60" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
-                            </fx:Traslados>
-                    </fx:ImpuestosSAT>
-                <fx:Opciones>
-                </fx:Opciones>
-            </fx:Concepto>
-    </fx:Conceptos>
-            <fx:ImpuestosSAT TotalImpuestosTrasladados="1489.60">
-            <fx:Traslados>
-                        <fx:Traslado Base="9310.00" Importe="1489.60" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
-            </fx:Traslados>
-            </fx:ImpuestosSAT>
-    <fx:Totales>
-        <fx:Moneda>MXN</fx:Moneda>
-        <fx:TipoDeCambioVenta>1</fx:TipoDeCambioVenta>
-        <fx:SubTotalBruto>9310.00</fx:SubTotalBruto>
-        <fx:SubTotal>9310.00</fx:SubTotal>
-        <fx:Descuento>0.00</fx:Descuento>
-        <fx:Total>10799.60</fx:Total>
-        <fx:TotalEnLetra>-</fx:TotalEnLetra>
-                <fx:FormaDePago>99</fx:FormaDePago>
-    </fx:Totales>
-    <fx:ComprobanteEx>
-        <fx:TerminosDePago>
-                <fx:MetodoDePago>PPD</fx:MetodoDePago>
-                <fx:CondicionesDePago>1% 10 Net 30</fx:CondicionesDePago>
-        </fx:TerminosDePago>
-    </fx:ComprobanteEx>
-</fx:FactDocMX>
+<Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="NET" Folio="557" Fecha="2022-11-09T10:22:00" Sello="kCvb83eulU81Bd16HdA9gst3gIkokrH+uiUzqqFYydRcUwQz/SrUpdon0pRtfQftbCafqmAZiIkCdg8f37GJbFIxEqoO5LO2MQ6+iWY6zdwads41T7Lb7VrS134g89RKFKsy32z8NZJC5t10/zmq9at2WcR90ZyLXftQTGR5DBEJgZuQCr0zEtsSNsnAAAjf08tNa/yNtGFb2/zbL3eep6Kx2VEW+BluSDOC8BVeNFwFVuLXmIflgy6qVz/rVyGD72SqCQElB+09Z3+cylhwqTaACOTl4XdKipBiUWOxqFiWYr3+CxYft4IF+u9AdRktIvJINJmI3CPjXX2oXELaDQ==" FormaPago="99" NoCertificado="30001000000400002436" Certificado="MIIFrjCCA5agAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk1NDAyWhcNMjMwNjE3MTk1NDAyWjCB1TEiMCAGA1UEAxMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTEiMCAGA1UEKRMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTEiMCAGA1UEChMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTElMCMGA1UELRMcSkVTOTAwMTA5UTkwIC8gS0FITzY0MTEwMUIzOTEeMBwGA1UEBRMVIC8gS0FITzY0MTEwMUhOVExLUzA2MSAwHgYDVQQLExdKaW1lbmV6IEVzdHJhZGEgU2FsYXMgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM/sSlyARDs52sGMTgfyBGLIJRTI9p0EW9NZeAuhSukgziLqABIgRZTPRmsULZghrEqxtjY5b33f251Ydy+Dpszjma5ezpjfM/YpIvfWdogOiuL3BYyeA/nqBlIYfbGLrt5/v1KlKGQx+lvTawMEG/7sKuJO+Yxi0XvvtWqlj5vm0dC72hA++GWbHTkb3MSFRPNz82UaN/m7A7Ao8+QAmCfdH0uPl7AeU0SwmbXZDh+1knW+IwBKnGE12GAPn0XxbBUNFjdLlxrwptBPjGQwPg1WbytDMONAMjyQBbx3tGjUqmsq0AGBD5KpFktnALBrdzxmSl4b4kmCzZ8WgC4WZWUCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBALMZ1jCJxLQ87syZ2pCLYXSCa54YIZzeE/svurvql5cM9KP/zlHJoxVzB5R792SDgmOr4q1bUZ4jDEY6/ttdkIV+YYq46RnA6FPMGyw2ky7FyiTZEOIy5A6EQfFFnaNaShZp+XERq5YACTjo1ahiYAe+5zrDEJUuaz43GYjeXthFUS8YlqnG3wMSUq4whAipkdmRzq4s/FpKN0mkcGKyELAhrkdbyyj/6+Lle2NfoDC8HWV7IxgLwGmStrweMqchjOEy+7iZGj4ORlw2gudwZCQjhiPhkci/JVSoWkq7z3RzK/AKqJhGJhx3v46olMawyxzyD/72tECAtciKvCXwgaZde0bnft2a/A4JuPo7siFJ/2MY2tcbYWcgpuIRklOhHSKGyaPJcIoSzECjGTeRE/ghOzhOMWHair3ehE+4pc8+4pqXbblWcVw+XblztxoSVX+L4zyqzLnH9t9N5p45WZvzXruozbcmOZX1pLp9nLCSZOw86sYPYz5er73BarFKTfaqG4JQm6iCrNdSbx3KSrnB1s3B8kCTjPoRyGcAg+syvPaBSvNzumiRoIRoOoYwoyKwogL/54nopp6LmEUvvHvn8I+rzZx67pChIi67298tIBo0lVMCrUqZ+yhaRwDDuzMCdd7xwOdjl8rFF1zVR1fjaus+T/JdN7IjzV3lY9ha" CondicionesDePago="Net 30" SubTotal="12635.00" Descuento="0.00" Moneda="MXN" TipoCambio="1" Total="14656.60" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="01030" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Emisor Rfc="JES900109Q90" Nombre="Sub 1 - CDMX" RegimenFiscal="610" />
+	<Receptor Rfc="JES900109Q90" Nombre="Estimalte" UsoCFDI="G03" />
+	<Conceptos>
+		<Concepto ClaveProdServ="43211612" NoIdentificacion="NIN_Combo de teclado y ratón" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Combo de teclado y ratón" ValorUnitario="855.00" Importe="855.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="855.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="136.80" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43202222" NoIdentificacion="INV_VGA Cable - 8 Ft" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="VGA Cable - 8 Ft" ValorUnitario="475.00" Importe="475.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="475.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="76.00" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43212001" NoIdentificacion="NIN_Filtro de privacidad para monitores. Pantalla 22&quot;" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Filtro de privacidad para monitores. Pantalla 22 &quot;" ValorUnitario="2375.00" Importe="2375.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="2375.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="380.00" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43211900" NoIdentificacion="INV_Dell 24&quot; U2415 UltraSharp LED Monitor" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Dell 24&quot; U2415 UltraSharp LED Monitor" ValorUnitario="8930.00" Importe="8930.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="8930.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1428.80" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+	</Conceptos>
+	<Impuestos TotalImpuestosTrasladados="2021.60">
+		<Traslados>
+			<Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2021.60" />
+		</Traslados>
+	</Impuestos>
+	<Complemento>
+		<TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="7a16f10f-c629-4aa9-bd0d-b8c4dacf6399" FechaTimbrado="2022-11-09T10:28:16" RfcProvCertif="SPR190613I52" SelloCFD="kCvb83eulU81Bd16HdA9gst3gIkokrH+uiUzqqFYydRcUwQz/SrUpdon0pRtfQftbCafqmAZiIkCdg8f37GJbFIxEqoO5LO2MQ6+iWY6zdwads41T7Lb7VrS134g89RKFKsy32z8NZJC5t10/zmq9at2WcR90ZyLXftQTGR5DBEJgZuQCr0zEtsSNsnAAAjf08tNa/yNtGFb2/zbL3eep6Kx2VEW+BluSDOC8BVeNFwFVuLXmIflgy6qVz/rVyGD72SqCQElB+09Z3+cylhwqTaACOTl4XdKipBiUWOxqFiWYr3+CxYft4IF+u9AdRktIvJINJmI3CPjXX2oXELaDQ==" NoCertificadoSAT="30001000000400002495" SelloSAT="G8b4N6BcdI83lcZGMM+44WUBYLvyETziE9uQCpO0gpF8a1idV6QNNzH1gs7QaLAFpVOXEm40nN9TSZhB04LicMaSG+fMiJ07BE4c+3QHofBXWUnxXwos1uYTQfqOuIpmDM3IupJBAW0vzyf755e7+W6JcfPEodftQjDD8+VephzFcbvbxbqzzIbq8AJgn4S1oespVpKbqZrvZbF0StUIim270Idxu023Dig1PDDKqfXuhvsG51sKVLrwMwkPROAXcbc5mJb3C20ae+wuLqhfk2WywN6G0Vd2g76OIKjF+IeJYQ20L225X6vvW/mgW6Nl5opD/yaJTLJwGtIdQLNZWQ==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+	</Complemento>
+	<Addenda>
+		<AddendaOXXO xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<Articulos>
+				Mis Articulos
+			</Articulos>
+			<otra>
+				Mi valor
+			</otra>
+		</AddendaOXXO>
+	</Addenda>
+</Comprobante>
