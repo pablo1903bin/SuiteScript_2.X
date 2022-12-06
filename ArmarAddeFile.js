@@ -2,7 +2,7 @@
  * @NApiVersion 2.0
  * @NScriptType UserEventScript
  */
-define(["N/record", "N/log", "N/file", "N/xml"], function (
+ define(["N/record", "N/log", "N/file", "N/xml"], function (
   record,
   log,
   file,
@@ -22,12 +22,14 @@ define(["N/record", "N/log", "N/file", "N/xml"], function (
    * @Since 2015.2
    */
   function afterSubmit(context) {
+
     /*                       ESTE ES EL CHIDO                              */
+
     if (
       context.type == context.UserEventType.EDIT ||
       context.type == context.UserEventType.XEDIT
     ) {
-      log.debug("estas Editando o Xeditando un registro"); //********************************* DEBUG
+      log.debug("estas Editando o Transformando un registro"); //********************************* DEBUG
       var factura = context.newRecord; //Traer el obj de registro del obj de contexto
 
       var IdDeFacturaReal = factura.getValue(
@@ -53,7 +55,6 @@ define(["N/record", "N/log", "N/file", "N/xml"], function (
 
       try {
         var xmlData = archivo.getContents(); //Traigo el contenido xml del objeto cargado ya es cadena
-        log.debug("Tipo de dato de mia rchivo cargado xml ", typeof xmlData); //*    *********************************** DEBUG
 
         /*    Normalmente la factura en xml esta metida dentro del nodo Addenda k ya trae por defecto el xml k me genera netSuite hay k borrarla        */
 
@@ -68,20 +69,45 @@ define(["N/record", "N/log", "N/file", "N/xml"], function (
         var cadenaSumada = copiaPrimeraParteCadena + restoCadena; //le sumo la segunda parte de la cadena
         xmlData = cadenaSumada; //Mi Nueva cadena armada se la asigno a xmlData k reemplazara totalmente su valor
 
-        /*   Aqui vamos a trabajar la nueva cadena reestructurada limpiada   */
+        /* Aqui vamos a trabajar la nueva cadena reestructurada limpiada   */
 
-        var sttr = "<cfdi:Addenda>"; //MI nodo a buscar donde creare nuevos nodos hijos
-        var tamSttr = sttr.length; //tamaño de mi nodo a buscar
-        var nodo_location = xmlData.indexOf(sttr); //Me da la Posicion Num inicial dentro de mi cadena total
+        /* Obtener los articulos vendidos de la factura */
+        var posicion = xmlData.indexOf("<cfdi:Concepto "); //Pocision inicial de la cadena
+        var posicionFin = xmlData.indexOf("</cfdi:Concepto>"); //Pocision inicial de la cadena
+        var myArray = [];
+    
+        if( posicion == -1 ){
+           log.debug("No encontro la posision de la cadena");
+        }
 
-        var tamCompSttr = nodo_location + tamSttr; //suma numero incial mas el tamaño de mi nodo encontrado
-        var miNodoPersonalizado =
-          "<oxxo:AddendaOXXO xmlns:oxxo='http://www.buzonfiscal.com/schema/xsd/oxxo' xmlns:xs='http://www.w3.org/2001/XMLSchema'><oxxo:Articulos>Mis Articulos</oxxo:Articulos><otra>Mi valor</otra></oxxo:AddendaOXXO>";
+        while ( posicion != -1 && posicionFin != -1 ) {
+          //Si existen mis cadenas
+          var myArray2 = [];
+          var nodoCierre = "</cfdi:Concepto>";
+          var tamNodoCierre = nodoCierre.length;
+          var concepto = xmlData.slice(posicion, posicionFin + tamNodoCierre);
+          myArray2.push(concepto);
+          myArray.push(myArray2);
+          var posicion = xmlData.indexOf("<cfdi:Concepto ", posicion + 1); //Busca la coincidencia a partir de un Num dado
+          var posicionFin = xmlData.indexOf(nodoCierre, posicionFin + 1); //Busca la coincidencia a partir de un Num dado
+        }
 
-        if (nodo_location != -1) {
-          //Si existe <cfdi:Addenda> entonces le agrego sus hijos nodos
+           //Armar por cada arreglo de myArray una addenda  <======
+
+          var sttr = "<cfdi:Addenda>"; //MI nodo a buscar donde creare nuevos nodos hijos
+          var tamSttr = sttr.length; //tamaño de mi nodo a buscar
+          var nodo_location = xmlData.indexOf(sttr); //Me da la Posicion Num inicial dentro de mi cadena total
+          var tamCompSttr = nodo_location + tamSttr; //suma numero inicial mas el tamaño de mi nodo encontrado para meter en adenlante nodos hijos
+           
+          var miNodoPersonalizado1 =
+          '<oxxo:AddendaOXXO xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.buzonfiscal.com/schema/xsd/oxxo" noVersAdd="1" claseDoc="1" plaza="15OBQ" tipoProv="01" locType="T" folioPago="FP_10OBR_85524" glnEmisor="7504015753003" glnReceptor="7507003300005" moneda="MXN" importeTotal="52243.00" tipoValidacion="1" fuenteNota="1"></oxxo:AddendaOXXO>';
+
+  
+  //Aqui recorro el arreglo de productos uno por cada item
+    
+
           var primeraParteCadena = xmlData.slice(0, tamCompSttr); //Copiar la cadena desde el inicio mas el tamaño del nodo encontrado
-          var primeraPartMasNodo = (primeraParteCadena += miNodoPersonalizado); // mi copia de la cadena primera le conactena mi nodo addenda
+          var primeraPartMasNodo = (primeraParteCadena += miNodoPersonalizado1); // mi copia de la cadena primera le conactena mi nodo addenda
           var restoCadena = xmlData.slice(tamCompSttr); //Copio el resto de la cadena despues de Addenda sumada mas mi nodo">
           var totalCadena = primeraPartMasNodo + restoCadena;
           //Nueva cadena asignada ala original a traves de copias de la misma y reestructurada
@@ -110,7 +136,8 @@ define(["N/record", "N/log", "N/file", "N/xml"], function (
             enableSourcing: true,
             ignoreMandatoryFields: true,
           });
-        }
+          log.debug("ejecuto todo el script");
+      
       } catch (e) {
         log.error({
           title: e.name,

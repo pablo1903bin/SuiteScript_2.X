@@ -1,0 +1,42 @@
+<Concepto ClaveProdServ="52101502" NoIdentificacion="NIN_Alfombra de piso mate (122 x 135)" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Alfombra de piso mate (122 x 135)" ValorUnitario="3420.00" Importe="3420.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="3420.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="547.20" />
+				</Traslados>
+			</Impuestos>
+</Concepto>
+<Concepto ClaveProdServ="43211612" NoIdentificacion="NIN_Combo de teclado y ratón" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Combo de teclado y ratón" ValorUnitario="855.00" Importe="855.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="855.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="136.80" />
+				</Traslados>
+			</Impuestos>
+</Concepto>
+<Concepto ClaveProdServ="46181541" NoIdentificacion="NIN_Guantes desechables de nitrilo para uso general" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Guantes desechables de nitrilo para uso general" ValorUnitario="228.00" Importe="228.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="228.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="36.48" />
+				</Traslados>
+			</Impuestos>
+</Concepto>
+<Concepto ClaveProdServ="43211802" NoIdentificacion="NIN_Mouse Pad Ergonómico de Gel" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Mouse Pad Ergonómico de Gel" ValorUnitario="304.00" Importe="304.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="304.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="48.64" />
+				</Traslados>
+			</Impuestos>
+</Concepto>
+<Concepto ClaveProdServ="43211501" NoIdentificacion="INV_Sun Sparc T4-2 Server" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Sun Sparc T4-2 Server" ValorUnitario="216600.00" Importe="216600.00" Descuento="0.00">
+		   <Impuestos>
+				<Traslados>
+					<Traslado Base="216600.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="34656.00" />
+			    </Traslados>
+           </Impuestos>
+</Concepto>
+<Concepto ClaveProdServ="25191722" NoIdentificacion="NIN_Kit de herramientas de 42 piezas" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Kit de herramientas de 42 piezas" ValorUnitario="950.00" Importe="950.00" Descuento="0.00">
+           <Impuestos>
+				<Traslados>
+					<Traslado Base="950.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="152.00" />
+				</Traslados>
+			</Impuestos>
+</Concepto>

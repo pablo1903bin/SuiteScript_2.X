@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="NET" Folio="572" Fecha="2022-11-15T16:20:00" Sello="lz1pExsu77m/nNc9YDdpj7hBKBJ+hu2lQVhpYXaYGdAF4xLcGG7mevthxRzpWmazNIpaDYRw64QQxgVUWZqZJ+07nJcgBZocwn+g3DjFDX+iDVIrSp7/xqLZt+LKE94wPU1wvZZdBYCSDwfCd9a9pmnhfFb8Z1yI8WEkt5IqpZuUlZYWuX1ZPORTUtzoGeL0XpvYeNNRLhJ6cuY3RxIiB5Xr0K4cBtUYaxicMSXQ/hjmd9sHkeNpROa60jOo42TrLnRH5kMNYP8l0i027WEUBBDkRTY2z/6USsvLySalr5oVqYnl6+gwDcqUbssCLRYULmOC23xbu2OqZm3DqGGTWg==" FormaPago="99" NoCertificado="30001000000400002436" Certificado="MIIFrjCCA5agAwIBAgIUMzAwMDEwMDAwMDA0MDAwMDI0MzYwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWRpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMTkwNjE3MTk1NDAyWhcNMjMwNjE3MTk1NDAyWjCB1TEiMCAGA1UEAxMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTEiMCAGA1UEKRMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTEiMCAGA1UEChMZSklNRU5FWiBFU1RSQURBIFNBTEFTIEEgQTElMCMGA1UELRMcSkVTOTAwMTA5UTkwIC8gS0FITzY0MTEwMUIzOTEeMBwGA1UEBRMVIC8gS0FITzY0MTEwMUhOVExLUzA2MSAwHgYDVQQLExdKaW1lbmV6IEVzdHJhZGEgU2FsYXMgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAM/sSlyARDs52sGMTgfyBGLIJRTI9p0EW9NZeAuhSukgziLqABIgRZTPRmsULZghrEqxtjY5b33f251Ydy+Dpszjma5ezpjfM/YpIvfWdogOiuL3BYyeA/nqBlIYfbGLrt5/v1KlKGQx+lvTawMEG/7sKuJO+Yxi0XvvtWqlj5vm0dC72hA++GWbHTkb3MSFRPNz82UaN/m7A7Ao8+QAmCfdH0uPl7AeU0SwmbXZDh+1knW+IwBKnGE12GAPn0XxbBUNFjdLlxrwptBPjGQwPg1WbytDMONAMjyQBbx3tGjUqmsq0AGBD5KpFktnALBrdzxmSl4b4kmCzZ8WgC4WZWUCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQELBQADggIBALMZ1jCJxLQ87syZ2pCLYXSCa54YIZzeE/svurvql5cM9KP/zlHJoxVzB5R792SDgmOr4q1bUZ4jDEY6/ttdkIV+YYq46RnA6FPMGyw2ky7FyiTZEOIy5A6EQfFFnaNaShZp+XERq5YACTjo1ahiYAe+5zrDEJUuaz43GYjeXthFUS8YlqnG3wMSUq4whAipkdmRzq4s/FpKN0mkcGKyELAhrkdbyyj/6+Lle2NfoDC8HWV7IxgLwGmStrweMqchjOEy+7iZGj4ORlw2gudwZCQjhiPhkci/JVSoWkq7z3RzK/AKqJhGJhx3v46olMawyxzyD/72tECAtciKvCXwgaZde0bnft2a/A4JuPo7siFJ/2MY2tcbYWcgpuIRklOhHSKGyaPJcIoSzECjGTeRE/ghOzhOMWHair3ehE+4pc8+4pqXbblWcVw+XblztxoSVX+L4zyqzLnH9t9N5p45WZvzXruozbcmOZX1pLp9nLCSZOw86sYPYz5er73BarFKTfaqG4JQm6iCrNdSbx3KSrnB1s3B8kCTjPoRyGcAg+syvPaBSvNzumiRoIRoOoYwoyKwogL/54nopp6LmEUvvHvn8I+rzZx67pChIi67298tIBo0lVMCrUqZ+yhaRwDDuzMCdd7xwOdjl8rFF1zVR1fjaus+T/JdN7IjzV3lY9ha" CondicionesDePago="Net 30" SubTotal="222357.00" Descuento="0.00" Moneda="MXN" TipoCambio="1" Total="257934.12" TipoDeComprobante="I" MetodoPago="PPD" LugarExpedicion="01030" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Emisor Rfc="JES900109Q90" Nombre="Sub 1 - CDMX" RegimenFiscal="610" />
+	<Receptor Rfc="JES900109Q90" Nombre="Palto Soluciones" UsoCFDI="G03" />
+	<Conceptos>
+		<Concepto ClaveProdServ="52101502" NoIdentificacion="NIN_Alfombra de piso mate (122 x 135)" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Alfombra de piso mate (122 x 135)" ValorUnitario="3420.00" Importe="3420.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="3420.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="547.20" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43211612" NoIdentificacion="NIN_Combo de teclado y ratón" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Combo de teclado y ratón" ValorUnitario="855.00" Importe="855.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="855.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="136.80" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="46181541" NoIdentificacion="NIN_Guantes desechables de nitrilo para uso general" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Guantes desechables de nitrilo para uso general" ValorUnitario="228.00" Importe="228.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="228.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="36.48" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43211802" NoIdentificacion="NIN_Mouse Pad Ergonómico de Gel" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Mouse Pad Ergonómico de Gel" ValorUnitario="304.00" Importe="304.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="304.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="48.64" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="43211501" NoIdentificacion="INV_Sun Sparc T4-2 Server" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Sun Sparc T4-2 Server" ValorUnitario="216600.00" Importe="216600.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="216600.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="34656.00" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+		<Concepto ClaveProdServ="25191722" NoIdentificacion="NIN_Kit de herramientas de 42 piezas" Cantidad="1.000000" ClaveUnidad="E48" Unidad="7" Descripcion="Kit de herramientas de 42 piezas" ValorUnitario="950.00" Importe="950.00" Descuento="0.00">
+			<Impuestos>
+				<Traslados>
+					<Traslado Base="950.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="152.00" />
+				</Traslados>
+			</Impuestos>
+		</Concepto>
+	</Conceptos>
+	<Impuestos TotalImpuestosTrasladados="35577.12">
+		<Traslados>
+			<Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="35577.12" />
+		</Traslados>
+	</Impuestos>
+	<Complemento>
+		<TimbreFiscalDigital xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="945de096-dc99-49c8-be11-4e6fa6261a9a" FechaTimbrado="2022-11-15T16:21:09" RfcProvCertif="SPR190613I52" SelloCFD="lz1pExsu77m/nNc9YDdpj7hBKBJ+hu2lQVhpYXaYGdAF4xLcGG7mevthxRzpWmazNIpaDYRw64QQxgVUWZqZJ+07nJcgBZocwn+g3DjFDX+iDVIrSp7/xqLZt+LKE94wPU1wvZZdBYCSDwfCd9a9pmnhfFb8Z1yI8WEkt5IqpZuUlZYWuX1ZPORTUtzoGeL0XpvYeNNRLhJ6cuY3RxIiB5Xr0K4cBtUYaxicMSXQ/hjmd9sHkeNpROa60jOo42TrLnRH5kMNYP8l0i027WEUBBDkRTY2z/6USsvLySalr5oVqYnl6+gwDcqUbssCLRYULmOC23xbu2OqZm3DqGGTWg==" NoCertificadoSAT="30001000000400002495" SelloSAT="lblRBoPIsW6RkEZCBjpfAQGQQijfSyO7LZ6hXsQELAbqrh8QJci60uC74v8ybysp3J3UKRXYZN1/fuz30zKbd8eiDMcPktxLhHRzWJFex7lFnekxfeIPhCZMNaYZq7Cv9ULkSXGePLJbg1lAyi8I9TME0dLWelRe0ebe0QPsxbA62G7ldB/sNengyGGolT7hBdq/+/K4HPZAu73gIdOOCOmkjdzbbwtduzlWrnftp/KAm7xc/HWdx3+Ke2PFCjMuJdI2y57tkVBjokU9/UkldkKxEGsmLl9/d47UrJf2ABpLezxlzGU0O2AkP25VG/dBDNjwdjv7OHJDf3Cj75q3yA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+	</Complemento>
+	<Addenda>
+		<AddendaOXXO xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.buzonfiscal.com/schema/xsd/oxxo" noVersAdd="1" claseDoc="1" plaza="15OBQ" tipoProv="01" locType="T" folioPago="FP_10OBR_85524" glnEmisor="7504015753003" glnReceptor="7507003300005" moneda="MXN" importeTotal="52243.00" tipoValidacion="1" fuenteNota="1">
+		</AddendaOXXO>
+	</Addenda>
+</Comprobante>

@@ -21,20 +21,44 @@ function(record) {
 	 * @Since 2015.2
 	 */
 	function afterSubmit(scriptContext) {
-		//Instanciar mi registro de empleado estoy referenciando mi registro
-		var empleado = scriptContext.newRecord;
-           //Si se esta creando un nuevo registro
-		if (scriptContext.type == scriptContext.UserEventType.CREATE) {
-			
-			var llamada = record.create({
-				type : record.Type.PHONE_CALL
-			});
-			llamada.setValue('title', 'llame a HR para obtener beneficios');
-			llamada.setValue('assigned', empleado.id);
-			llamada.save();
+		
+    /*                       Pruebas con el modulo xml                              */
+
+    if (
+		context.type == context.UserEventType.EDIT ||
+		context.type == context.UserEventType.XEDIT
+	  ) {
+		log.debug("estas Editando o Transformando un registro"); //********************************* DEBUG
+		var factura = context.newRecord; //Traer el obj de registro del obj de contexto
+  
+		var IdDeFacturaReal = factura.getValue(
+		  //236591 ejm
+		  //Traigo el  nombre de mi factura
+		  "custbody_psg_ei_certified_edoc"
+		);
+  
+		if (!IdDeFacturaReal) {
+		  return;
 		}
+
+		//Cargar el registro de mi  factura, sobre este puedo obtener valores como Obj, setaear valores
+		var facturaRegistrada = record.load({
+		  type: factura.type,
+		  id: factura.id,
+		  isDynamic: true,
+		});
+		var nombreFactura = factura.getText(
+		  //Traigo el  nombre de mi factura
+		  "custbody_psg_ei_certified_edoc"
+		);
+		var archivo = file.load("Certified E-Documents/" + nombreFactura); //Cargo el archivo en memoria
+		var xmlData = archivo.getContents(); //Traigo el contenido xml del objeto cargado ya es cadena
+
+
+
 	}
 
+}
 	return {
 
 		afterSubmit : afterSubmit
