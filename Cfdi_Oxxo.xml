@@ -1,0 +1,36 @@
+<cfdi:Comprobante xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.buzonfiscal.com/schema/xsd/oxxo http://www.buzonfiscal.com/schema/xsd/AddendaOxxo_v1.xsd" Certificado="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" Fecha="2022-08-31T10:55:25" Folio="91220" FormaPago="99" LugarExpedicion="23428" MetodoPago="PPD" Moneda="MXN" NoCertificado="00001000000504697272" Sello="mYqhQOTtDa4suu7aJBTY4KO2C9WHMW8J623S9xciLnEkfayFknMBA83nx7xhheC9b9Mdh1ae+cDPmYPyitXPK1JHLgv7v9f2a6DiG866M/A6tpnooNQfIFcjNGH58R6MHb9ST2UbeHfe/g8ZqNmQ8fi7Uz21ri91kh/5WjlAuSVF7Er7ncu6nYealXaezID1WAxhA6nDL7ipctYGFdZ4sh/6Z4sL6PZ/BmFLrATvl5NykM3dz2m5DLno2ANhXeDGAVgrBZdSMONhGbEQYn7t+AYNES+t+ZvY80qASxX8NnXLY0vuNoSQe1KN60G3K6ae9N3jBjCjWYAQV3DXDoTMsQ==" Serie="AA" SubTotal="52243.00" TipoDeComprobante="I" Total="52243.00" Version="3.3">
+<cfdi:Emisor Nombre="PRODUCTOS PERLA" RegimenFiscal="601" Rfc="PPE960412KH6"/>
+<cfdi:Receptor Nombre="CADENA COMERCIAL OXXO SA DE CV" Rfc="CCO8605231N4" UsoCFDI="G01"/>
+<cfdi:Conceptos>
+<cfdi:Concepto Cantidad="929.0000" ClaveProdServ="50221300" ClaveUnidad="KGM" Descripcion="TORTILLA DE MAIZ CALIENTE" Importe="18580.00" NoIdentificacion="P-TM-0001" Unidad="KILO" ValorUnitario="20.0000">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="18580.00" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto>
+<cfdi:Concepto Cantidad="3206.0000" ClaveProdServ="50221300" ClaveUnidad="KGM" Descripcion="TORTILLA DE MAIZ CALIENTE 500 GRS." Importe="33663.00" NoIdentificacion="P-TM-0002" Unidad="KILO" ValorUnitario="10.5000">
+<cfdi:Impuestos>
+<cfdi:Traslados>
+<cfdi:Traslado Base="33663.00" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+</cfdi:Concepto>
+</cfdi:Conceptos>
+<cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+<cfdi:Traslados>
+<cfdi:Traslado Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+</cfdi:Impuestos>
+<cfdi:Complemento>
+<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="4A0C36CF-0047-429E-9FD9-5900971EDC84" FechaTimbrado="2022-09-02T11:50:30" RfcProvCertif="MAS0810247C0" SelloCFD="mYqhQOTtDa4suu7aJBTY4KO2C9WHMW8J623S9xciLnEkfayFknMBA83nx7xhheC9b9Mdh1ae+cDPmYPyitXPK1JHLgv7v9f2a6DiG866M/A6tpnooNQfIFcjNGH58R6MHb9ST2UbeHfe/g8ZqNmQ8fi7Uz21ri91kh/5WjlAuSVF7Er7ncu6nYealXaezID1WAxhA6nDL7ipctYGFdZ4sh/6Z4sL6PZ/BmFLrATvl5NykM3dz2m5DLno2ANhXeDGAVgrBZdSMONhGbEQYn7t+AYNES+t+ZvY80qASxX8NnXLY0vuNoSQe1KN60G3K6ae9N3jBjCjWYAQV3DXDoTMsQ==" NoCertificadoSAT="00001000000505142236" SelloSAT="GvLarNF9lMkk+PHE4131VyMcuW7Q3fSdfTivq9eH6RLRd5gBVfaE+koA3Kt/PpreYPAVyMZItZ55GaS4tqpfnQ0XsAWcxlSy7tET+lKCC6Hxbfk3zV40qwU5emV1U9pj9HoQzlsuGY2l2AMF1inS4wZR0PoEPztTxBYnwXlutLkEeVbVHa/7FZfBL8euLDx+lUtkLaIyYpeQxqJGbHAtRafde2d7T/5gLPr1b2bb4P1PJ0cDSex/ZC+O5s63KxbNQBYCQhleXzqu3yAY7prYfXKHjWS8xsjSjAzmGTqBDlr6Kr8OasEelLSlnqBC1geGixnuhIlaJQdNcn8F7GEVaA=="/>
+</cfdi:Complemento>
+<cfdi:Addenda>
+<oxxo:AddendaOXXO xmlns:oxxo="http://www.buzonfiscal.com/schema/xsd/oxxo" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.buzonfiscal.com/schema/xsd/oxxo" noVersAdd="1" claseDoc="1" plaza="15OBQ" tipoProv="01" locType="T" folioPago="FP_10OBR_85524" glnEmisor="7504015753003" glnReceptor="7507003300005" moneda="MXN" importeTotal="52243.00" tipoValidacion="1" fuenteNota="1">
+<oxxo:Articulos>
+<oxxo:Detalle fechaEntrega="" nombreTienda="Obregón" descripcion="TORTILLA DE MAIZ CALIENTE" unidadMedida="" cantidad="929.00" porcIva="0" montoIva="0" ImporteNeto="18580.00"/>
+<oxxo:Detalle fechaEntrega="" nombreTienda="Obregón" descripcion="TORTILLA DE MAIZ CALIENTE 500 GRS." unidadMedida="" cantidad="3206.00" porcIva="0" montoIva="0" ImporteNeto="33663.00"/>
+</oxxo:Articulos>
+</oxxo:AddendaOXXO>
+</cfdi:Addenda>
+</cfdi:Comprobante>
